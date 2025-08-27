@@ -1,0 +1,307 @@
+[System] cp -r ../../judge_files/code code
+[System] cp -r ../../test/136A test
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/1.in > /test/1.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/2.in > /test/2.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/3.in > /test/3.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/4.in > /test/4.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/5.in > /test/5.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/6.in > /test/6.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/7.in > /test/7.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/8.in > /test/8.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/9.in > /test/9.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/10.in > /test/10.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/11.in > /test/11.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/12.in > /test/12.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/13.in > /test/13.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/14.in > /test/14.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/15.in > /test/15.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/16.in > /test/16.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/17.in > /test/17.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/18.in > /test/18.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/19.in > /test/19.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/20.in > /test/20.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/21.in > /test/21.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/22.in > /test/22.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/23.in > /test/23.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/24.in > /test/24.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/25.in > /test/25.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/26.in > /test/26.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/27.in > /test/27.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/28.in > /test/28.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/29.in > /test/29.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/30.in > /test/30.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/31.in > /test/31.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/32.in > /test/32.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/33.in > /test/33.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/34.in > /test/34.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/35.in > /test/35.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/36.in > /test/36.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/37.in > /test/37.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/38.in > /test/38.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/39.in > /test/39.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/40.in > /test/40.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/41.in > /test/41.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/42.in > /test/42.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/43.in > /test/43.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/44.in > /test/44.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/45.in > /test/45.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/46.in > /test/46.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/47.in > /test/47.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/48.in > /test/48.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/49.in > /test/49.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/50.in > /test/50.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/51.in > /test/51.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/52.in > /test/52.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/53.in > /test/53.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/54.in > /test/54.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/55.in > /test/55.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/56.in > /test/56.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/57.in > /test/57.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/58.in > /test/58.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/59.in > /test/59.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/60.in > /test/60.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/61.in > /test/61.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/62.in > /test/62.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/63.in > /test/63.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/64.in > /test/64.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/65.in > /test/65.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/66.in > /test/66.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/67.in > /test/67.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/68.in > /test/68.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/69.in > /test/69.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/70.in > /test/70.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/71.in > /test/71.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/72.in > /test/72.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/73.in > /test/73.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/74.in > /test/74.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/75.in > /test/75.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/76.in > /test/76.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/77.in > /test/77.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/78.in > /test/78.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/79.in > /test/79.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/80.in > /test/80.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/81.in > /test/81.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/82.in > /test/82.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/83.in > /test/83.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/84.in > /test/84.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/85.in > /test/85.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/86.in > /test/86.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/87.in > /test/87.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/88.in > /test/88.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/89.in > /test/89.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/90.in > /test/90.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/91.in > /test/91.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/92.in > /test/92.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/93.in > /test/93.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/94.in > /test/94.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/95.in > /test/95.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/96.in > /test/96.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/97.in > /test/97.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/98.in > /test/98.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/99.in > /test/99.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/100.in > /test/100.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/101.in > /test/101.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 0
+[Result] ACCEPT
+[System] rm -rf test
+[System] rm -rf code

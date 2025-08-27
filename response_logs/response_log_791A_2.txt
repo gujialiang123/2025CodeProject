@@ -1,0 +1,63 @@
+assistant0:
+**Problem Solution: Find the Number of Years for Limak to Become Larger than Bob**
+====================================================================
+
+### Problem Description
+
+We are given the initial weights of two bears, Limak (a) and Bob (b), where Limak's weight is less than or equal to Bob's weight. We need to find the number of full years it takes for Limak to become strictly larger (heavier) than Bob, considering that Limak's weight is tripled every year and Bob's weight is doubled every year.
+
+### Solution
+
+We can solve this problem by simulating the weight increase of both bears over the years and checking when Limak becomes heavier than Bob.
+
+#### Code
+
+```python
+def years_toBecome_larger(a, b):
+    """
+    Calculate the number of years it takes for Limak to become strictly larger than Bob.
+
+    Args:
+        a (int): The initial weight of Limak.
+        b (int): The initial weight of Bob.
+
+    Returns:
+        int: The number of years it takes for Limak to become strictly larger than Bob.
+    """
+    years = 0
+    while a <= b:
+        a *= 3  # Limak's weight is tripled every year
+        b *= 2  # Bob's weight is doubled every year
+        years += 1
+    return years
+
+def main():
+    # Read input
+    a, b = map(int, input().split())
+
+    # Calculate and print the result
+    result = years_toBecome_larger(a, b)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explanation
+
+1.  We define a function `years_toBecome_larger(a, b)` that takes the initial weights of Limak and Bob as input.
+2.  Inside the function, we use a while loop to simulate the weight increase of both bears over the years.
+3.  In each iteration, we triple Limak's weight and double Bob's weight.
+4.  We increment the `years` counter in each iteration.
+5.  The loop continues until Limak becomes strictly larger than Bob (i.e., `a > b`).
+6.  Once the loop exits, we return the number of years it took for Limak to become larger than Bob.
+7.  In the `main()` function, we read the input weights, call the `years_toBecome_larger()` function, and print the result.
+
+### Example Usage
+
+*   Input: `4 9`
+*   Output: `3`
+    *   Explanation: After 3 years, Limak's weight will be `4 * 3^3 = 108`, and Bob's weight will be `9 * 2^3 = 72`. Therefore, Limak will become strictly larger than Bob after 3 full years.
+=========end==========
+
+AC: Solution found successfully

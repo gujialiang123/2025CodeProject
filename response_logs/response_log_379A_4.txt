@@ -1,0 +1,23 @@
+assistant0:
+```python
+import sys
+
+def calculate_hours(a, b):
+    hours = a
+    candles = a
+    while candles >= b:
+        new_candles = candles // b
+        hours += new_candles
+        candles = new_candles + (candles % b)
+    return hours
+
+def main():
+    a, b = map(int, sys.stdin.readline().split())
+    print(calculate_hours(a, b))
+
+if __name__ == "__main__":
+    main()
+```
+=========end==========
+
+AC: Solution found successfully

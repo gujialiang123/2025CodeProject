@@ -1,0 +1,55 @@
+assistant0:
+**Solution**
+===============
+
+### Problem Statement
+
+Given a number `n` as a string, find out how many times we need to apply the spell that turns any number into the sum of its digits until it becomes a single digit.
+
+### Approach
+
+1. Initialize a counter to store the number of times the spell is applied.
+2. Convert the input number to a string to handle large numbers.
+3. While the length of the string is greater than 1, apply the spell and increment the counter.
+4. Return the counter.
+
+### Code
+
+```python
+def count_spells(n):
+    """
+    Count the number of times a spell needs to be applied to a number
+    until it becomes a single digit.
+
+    Args:
+    n (str): The input number as a string.
+
+    Returns:
+    int: The number of times the spell needs to be applied.
+    """
+    count = 0
+    while len(n) > 1:
+        # Calculate the sum of digits
+        n = str(sum(int(digit) for digit in n))
+        count += 1
+    return count
+
+# Example usage
+n = input()
+print(count_spells(n))
+```
+
+### Explanation
+
+1. The `count_spells` function takes a string `n` as input.
+2. The `while` loop continues until the length of `n` is greater than 1.
+3. Inside the loop, we calculate the sum of digits using a generator expression and convert the result back to a string.
+4. We increment the `count` variable each time the spell is applied.
+5. Finally, we return the `count` variable.
+
+### Time Complexity
+
+The time complexity of this solution is O(m \* n), where m is the number of digits in the input number and n is the number of times the spell needs to be applied. However, since n is typically small (less than 10), we can consider the time complexity to be O(m).
+=========end==========
+
+AC: Solution found successfully

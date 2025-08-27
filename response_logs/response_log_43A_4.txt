@@ -1,0 +1,75 @@
+assistant0:
+**Solution: Determine the Winning Team in a Football Match**
+
+**Problem Statement:**
+Given a description of a football match, determine the winning team by counting the number of goals scored by each team.
+
+**Constraints:**
+
+* The match description consists of `n` lines, where `1 <= n <= 100`.
+* Each line represents a goal and contains the name of the team that scored it.
+* Team names are non-empty strings consisting of uppercase Latin letters, with a maximum length of 10 characters.
+* The match did not end in a tie, and there are no more than two different teams in the description.
+
+**Solution:**
+
+### GoalCounter Class
+
+```python
+class GoalCounter:
+    def __init__(self):
+        self.team_goals = {}
+
+    def add_goal(self, team_name):
+        if team_name in self.team_goals:
+            self.team_goals[team_name] += 1
+        else:
+            self.team_goals[team_name] = 1
+
+    def get_winning_team(self):
+        winning_team = max(self.team_goals, key=self.team_goals.get)
+        return winning_team
+
+
+def main():
+    num_goals = int(input())
+
+    goal_counter = GoalCounter()
+    for _ in range(num_goals):
+        team_name = input().strip()
+        goal_counter.add_goal(team_name)
+
+    winning_team = goal_counter.get_winning_team()
+    print(winning_team)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explanation:
+
+1. We define a `GoalCounter` class to keep track of the number of goals scored by each team.
+2. The `add_goal` method updates the goal count for a team. If the team is not already in the `team_goals` dictionary, it is added with a count of 1.
+3. The `get_winning_team` method determines the team with the most goals by finding the key with the maximum value in the `team_goals` dictionary.
+4. In the `main` function, we read the number of goals, create a `GoalCounter` object, and iterate through each goal, adding it to the counter.
+5. Finally, we retrieve the winning team using the `get_winning_team` method and print it.
+
+### Example Usage:
+
+Input:
+```
+5
+TEAM_A
+TEAM_B
+TEAM_A
+TEAM_A
+TEAM_B
+```
+Output:
+```
+TEAM_A
+```
+=========end==========
+
+AC: Solution found successfully

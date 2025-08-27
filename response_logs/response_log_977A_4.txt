@@ -1,0 +1,49 @@
+assistant0:
+Here is a complete solution to the problem:
+
+```python
+def tanya_subtract(n, k):
+    # Convert the number to a string to easily access and modify each digit
+    num_str = str(n)
+
+    # Perform k subtractions
+    for _ in range(k):
+        # Check if the last digit is zero
+        if num_str[-1] == '0':
+            # If the last digit is zero, remove it
+            num_str = num_str[:-1]
+        else:
+            # If the last digit is not zero, decrement it
+            num_str = num_str[:-1] + str(int(num_str[-1]) - 1)
+
+    # Convert the resulting string back to an integer
+    result = int(num_str)
+
+    return result
+
+
+# Read the input
+n, k = map(int, input().split())
+
+# Print the result
+print(tanya_subtract(n, k))
+```
+
+This solution works as follows:
+
+*   It converts the input number `n` to a string `num_str` to easily access and modify each digit.
+*   It then performs `k` subtractions. In each subtraction, it checks if the last digit of `num_str` is zero.
+*   If the last digit is zero, it removes the last digit from `num_str`.
+*   If the last digit is not zero, it decrements the last digit of `num_str`.
+*   After all subtractions, it converts the resulting string `num_str` back to an integer and returns it as the result.
+
+The time complexity of this solution is O(k \* log(n)), where k is the number of subtractions and log(n) is the number of digits in the input number n. The space complexity is O(log(n)), as we need to store the input number as a string.
+
+Example use case:
+
+*   Input: `n = 100, k = 3`
+*   Output: `97`
+*   Explanation: Tanya's subtractions will be `100 -> 10 -> 9 -> 8 -> 7`. Therefore, the result after all k subtractions is `97`.
+=========end==========
+
+AC: Solution found successfully

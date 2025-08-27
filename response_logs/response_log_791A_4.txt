@@ -1,0 +1,51 @@
+assistant0:
+**Bear Limak Problem Solution**
+
+### Problem Description
+
+This problem involves determining the number of full years it will take for Limak's weight to become strictly larger than his brother Bob's weight. Limak's weight is tripled every year, while Bob's weight is doubled.
+
+### Code Solution
+
+```python
+def years_until_larger(a, b):
+    """
+    Calculate the number of full years until Limak's weight is strictly larger than Bob's.
+
+    Args:
+        a (int): Limak's initial weight
+        b (int): Bob's initial weight
+
+    Returns:
+        int: The number of full years until Limak's weight is strictly larger than Bob's
+    """
+    years = 0
+    while a <= b:
+        # Triple Limak's weight and double Bob's weight for each year
+        a *= 3
+        b *= 2
+        # Increment the year counter
+        years += 1
+    return years
+
+def main():
+    # Read input
+    a, b = map(int, input().split())
+    # Calculate and print the result
+    print(years_until_larger(a, b))
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explanation
+
+1. The `years_until_larger` function takes two arguments, `a` and `b`, representing Limak's and Bob's initial weights, respectively.
+2. The function enters a loop that continues until Limak's weight (`a`) is strictly larger than Bob's weight (`b`).
+3. Inside the loop, Limak's weight is tripled (`a *= 3`) and Bob's weight is doubled (`b *= 2`) to simulate the weight changes after each year.
+4. The `years` counter is incremented by 1 for each iteration, keeping track of the number of full years passed.
+5. Once Limak's weight becomes strictly larger than Bob's, the loop exits, and the function returns the total number of years (`years`) that have passed.
+6. In the `main` function, the input is read, and the `years_until_larger` function is called with the input values. The result is then printed to the console.
+=========end==========
+
+AC: Solution found successfully

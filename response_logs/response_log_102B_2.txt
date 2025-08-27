@@ -1,0 +1,54 @@
+assistant0:
+**Solution**
+
+### Problem Analysis
+
+The problem requires us to find the number of times we can replace a given number with the sum of its digits until it becomes a single-digit number.
+
+### Algorithm
+
+To solve this problem efficiently, we can use a simple iterative approach. We will continue to calculate the sum of the digits of the number until it becomes a single-digit number.
+
+### Code
+
+```python
+def sum_of_digits(n):
+    """Calculate the sum of digits of a given number."""
+    return sum(int(digit) for digit in n)
+
+def count_sum_operations(n):
+    """Count the number of operations required to reduce a number to a single digit."""
+    count = 0
+    while len(n) > 1:
+        n = str(sum_of_digits(n))
+        count += 1
+    return count
+
+def main():
+    n = input().strip()
+    result = count_sum_operations(n)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explanation
+
+1. The `sum_of_digits` function calculates the sum of digits of a given number by iterating over each character (digit) in the string representation of the number, converting it to an integer, and summing them up.
+2. The `count_sum_operations` function counts the number of operations required to reduce a number to a single digit. It does this by repeatedly calculating the sum of the digits of the number and updating the number until it becomes a single digit.
+3. In the `main` function, we read the input number as a string, call the `count_sum_operations` function, and print the result.
+
+### Example Use Cases
+
+* Input: `16`
+Output: `1`
+Explanation: `16` becomes `1 + 6 = 7`, which is a single-digit number.
+* Input: `942`
+Output: `2`
+Explanation: `942` becomes `9 + 4 + 2 = 15`, and then `15` becomes `1 + 5 = 6`, which is a single-digit number.
+
+Note that this solution uses string manipulation to avoid issues with large numbers, as suggested in the problem hint.
+=========end==========
+
+AC: Solution found successfully

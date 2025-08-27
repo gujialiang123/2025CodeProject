@@ -1,0 +1,7 @@
+[System] cp -r ../../judge_files/code code
+[System] cp -r ../../test/486A test
+[Debug] 即将执行docker命令: docker run --rm --cpus=1 --memory=256m --memory-swap=256m -v $PWD/code:/code -v $PWD/test:/test python bash -c "cd /code && timeout 1.0s python main.py < /test/1.in > /test/1.out 2>> /code/log.txt"
+[Debug] docker命令退出码: 256
+[Result] RUNTIME ERROR
+[System] rm -rf test
+[System] rm -rf code

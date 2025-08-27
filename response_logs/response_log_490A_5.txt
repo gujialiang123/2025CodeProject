@@ -1,0 +1,94 @@
+assistant0:
+**Solution: Forming Teams for Scientific Decathlon Olympias**
+===========================================================
+
+### Problem Statement
+
+Given a list of `n` children with skills in programming, maths, or physical education, form teams of three students with different skills to participate in the Scientific Decathlon Olympias.
+
+### Approach
+
+1.  Count the number of children with each skill.
+2.  Calculate the maximum number of teams that can be formed by taking the minimum of the counts of each skill.
+3.  Form teams by selecting one child from each skill group until one of the groups is depleted.
+
+### Code (Python)
+
+```python
+def form_teams(n, skills):
+    """
+    Form teams of three students with different skills.
+
+    Args:
+    n (int): The number of children.
+    skills (list): A list of skills where 1 = programming, 2 = maths, 3 = physical education.
+
+    Returns:
+    list: A list of teams, where each team is a list of three student indices.
+    """
+    # Initialize lists to store student indices for each skill
+    programming = []
+    maths = []
+    physical_education = []
+
+    # Populate the lists
+    for i, skill in enumerate(skills):
+        if skill == 1:
+            programming.append(i + 1)  # Store student index (1-based)
+        elif skill == 2:
+            maths.append(i + 1)
+        elif skill == 3:
+            physical_education.append(i + 1)
+
+    # Calculate the maximum number of teams
+    max_teams = min(len(programming), len(maths), len(physical_education))
+
+    # Form teams
+    teams = []
+    for _ in range(max_teams):
+        team = [programming.pop(0), maths.pop(0), physical_education.pop(0)]
+        teams.append(team)
+
+    return teams
+
+
+def main():
+    # Read input
+    n = int(input())
+    skills = list(map(int, input().split()))
+
+    # Form teams
+    teams = form_teams(n, skills)
+
+    # Print output
+    print(len(teams))
+    for team in teams:
+        print(' '.join(map(str, team)))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### Example Usage
+
+Input:
+
+```
+10
+1 2 3 1 2 3 1 2 3 1
+```
+
+Output:
+
+```
+3
+1 2 3
+4 5 6
+7 8 9
+```
+
+This solution ensures that the maximum number of teams is formed while maintaining the constraint that each team has one student with each skill. The teams are formed by selecting one student from each skill group until one of the groups is depleted. The output includes the number of teams and the student indices for each team.
+=========end==========
+
+AC: Solution found successfully

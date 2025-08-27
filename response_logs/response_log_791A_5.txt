@@ -1,0 +1,63 @@
+assistant0:
+**Problem Solution: Bear and Large Brother**
+===========================================
+
+**Problem Statement**
+-------------------
+
+Bear Limak wants to become the largest of bears, or at least to become larger than his brother Bob. Limak's weight is tripled after every year, while Bob's weight is doubled after every year. We need to find the number of full years after which Limak will become strictly larger (strictly heavier) than Bob.
+
+**Solution**
+------------
+
+We can solve this problem using a simple iterative approach. We'll keep track of Limak's and Bob's weights after each year and check if Limak has become strictly larger than Bob.
+
+**Code Solution**
+----------------
+
+```python
+def bear_and_large_brother(a, b):
+    """
+    Returns the number of full years after which Limak will become strictly larger than Bob.
+    
+    Args:
+    a (int): The initial weight of Limak.
+    b (int): The initial weight of Bob.
+    
+    Returns:
+    int: The number of full years after which Limak will become strictly larger than Bob.
+    """
+    years = 0
+    while a <= b:
+        a *= 3  # Limak's weight is tripled after every year
+        b *= 2  # Bob's weight is doubled after every year
+        years += 1
+    return years
+
+# Example usage:
+if __name__ == "__main__":
+    a, b = map(int, input().split())
+    print(bear_and_large_brother(a, b))
+```
+
+**Explanation**
+--------------
+
+*   We start with the initial weights of Limak (`a`) and Bob (`b`).
+*   We use a while loop to simulate the years passing. In each iteration, we triple Limak's weight and double Bob's weight.
+*   We increment the `years` counter by 1 after each iteration.
+*   We continue this process until Limak's weight becomes strictly larger than Bob's weight.
+*   Finally, we return the number of years after which Limak becomes strictly larger than Bob.
+
+**Time Complexity**
+------------------
+
+The time complexity of this solution is O(log(b/a)), where b and a are the initial weights of Bob and Limak, respectively. This is because the weights grow exponentially, and we need to find the point at which Limak's weight exceeds Bob's weight.
+
+**Space Complexity**
+-------------------
+
+The space complexity of this solution is O(1), as we only use a constant amount of space to store the weights and the years counter.
+=========end==========
+
+AC: Solution found successfully

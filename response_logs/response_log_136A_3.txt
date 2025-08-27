@@ -1,0 +1,57 @@
+assistant0:
+**Solution:**
+
+Here is a complete solution to the problem in Python:
+```python
+def solve(n, gifts):
+    """
+    Returns a list of integers representing the number of the friend who gave a gift to each friend.
+    
+    :param n: The number of friends
+    :param gifts: A list of integers representing the friend who received a gift from each friend
+    :return: A list of integers representing the number of the friend who gave a gift to each friend
+    """
+    result = [0] * n
+    for i, gift in enumerate(gifts):
+        result[gift - 1] = i + 1
+    return result
+
+def main():
+    n = int(input())  # Read the number of friends
+    gifts = list(map(int, input().split()))  # Read the list of gifts
+    result = solve(n, gifts)  # Solve the problem
+    print(*result)  # Print the result
+
+if __name__ == "__main__":
+    main()
+```
+**Explanation:**
+
+1. The `solve` function takes two inputs: `n` (the number of friends) and `gifts` (a list of integers representing the friend who received a gift from each friend).
+2. We create a list `result` of length `n` to store the number of the friend who gave a gift to each friend. We initialize all elements of `result` to 0.
+3. We iterate over the `gifts` list, where each element represents the friend who received a gift from the current friend. For each element, we update the corresponding element in `result` with the number of the friend who gave the gift.
+4. Finally, we return the `result` list.
+5. In the `main` function, we read the number of friends `n` and the list of gifts from the input, and then call the `solve` function to compute the result.
+6. We print the result using the `print` function with the `*` operator to separate the elements with spaces.
+
+**Example Use Case:**
+
+Input:
+```
+3
+2 3 1
+```
+Output:
+```
+3 1 2
+```
+Explanation:
+
+* Friend 1 received a gift from friend 3.
+* Friend 2 received a gift from friend 1.
+* Friend 3 received a gift from friend 2.
+
+Therefore, the output is `[3, 1, 2]`.
+=========end==========
+
+AC: Solution found successfully

@@ -68,9 +68,11 @@ def parse_arguments():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description='LLM Algorithm Problem Solver Agent')
     
-    # 必需参数
-    parser.add_argument('--problems_path', type=str, required=True,
+    # 必需/兼容参数
+    parser.add_argument('--problems_path', type=str, required=False,
                        help='problems根路径 (如: problems)')
+    parser.add_argument('--submissions_path', type=str, required=False,
+                       help='[兼容旧版] 旧参数，等同于 --problems_path，已弃用')
     parser.add_argument('--test_path', type=str, required=True,
                        help='test根路径 (如: test)')
     
@@ -103,10 +105,16 @@ def parse_arguments():
     
     args = parser.parse_args()
     
-    # 参数验证
+    # 兼容旧参数 --submissions_path
+    if not getattr(args, 'problems_path', None) and getattr(args, 'submissions_path', None):
+        print('[警告] --submissions_path 已弃用，请改用 --problems_path。此次将自动兼容映射。')
+        args.problems_path = args.submissions_path
+    
+    # 参数校验
+    if not args.problems_path:
+        parser.error('必须提供 --problems_path 或使用兼容参数 --submissions_path')
     if args.test_num < 1:
         parser.error("test_num 必须大于等于 1")
-    
     if args.query_depth < 1:
         parser.error("query_depth 必须大于等于 1")
     

@@ -1,0 +1,61 @@
+assistant0:
+**Solution**
+===============
+
+### Problem Statement
+
+Given a list of integers representing the friends who gave gifts to each other, find the friend who gave a gift to each individual.
+
+### Code
+
+```python
+def find_gift_givers(n, gifts):
+    """
+    Find the friend who gave a gift to each individual.
+
+    Args:
+    n (int): The number of friends.
+    gifts (list): A list of integers representing the friends who gave gifts to each other.
+
+    Returns:
+    list: A list of integers representing the friend who gave a gift to each individual.
+    """
+    result = [0] * n
+    for i, gift in enumerate(gifts):
+        result[gift - 1] = i + 1
+    return result
+
+def main():
+    n = int(input())
+    gifts = list(map(int, input().split()))
+    result = find_gift_givers(n, gifts)
+    print(*result)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explanation
+
+1.  Read the number of friends `n` and the list of gifts from the input.
+2.  Create a function `find_gift_givers` that takes `n` and the list of gifts as arguments.
+3.  Initialize a result list with `n` zeros.
+4.  Iterate over the list of gifts. For each gift, update the result list at the index corresponding to the gift recipient with the index of the gift giver (plus one, since indices are zero-based).
+5.  Return the result list.
+6.  In the `main` function, read the input, call `find_gift_givers`, and print the result.
+
+### Example Use Case
+
+Input:
+```
+3
+2 3 1
+```
+Output:
+```
+3 1 2
+```
+In this example, friend 2 gave a gift to friend 1, friend 3 gave a gift to friend 2, and friend 1 gave a gift to friend 3. Therefore, the output indicates that friend 3 gave a gift to friend 1, friend 1 gave a gift to friend 2, and friend 2 gave a gift to friend 3.
+=========end==========
+
+AC: Solution found successfully

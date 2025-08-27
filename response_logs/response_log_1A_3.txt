@@ -1,0 +1,63 @@
+assistant0:
+**Theatre Square Paving**
+==========================
+
+**Problem Description**
+------------------------
+
+Theatre Square in the capital city of Berland has a rectangular shape with the size `n x m` meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size `a x a`. The goal is to find the least number of flagstones needed to pave the Square.
+
+**Solution**
+------------
+
+To solve this problem, we need to divide the area of the Theatre Square by the area of a single flagstone. However, since we can't break the flagstones, we need to round up the result to the nearest whole number.
+
+### Formula
+
+The number of flagstones needed can be calculated using the formula:
+
+`flagstones = ceil(n / a) * ceil(m / a)`
+
+where `ceil(x)` is the ceiling function, which returns the smallest integer that is greater than or equal to `x`.
+
+### Code
+
+Here is a complete solution in Python:
+```python
+import math
+
+def theatre_square_paving(n, m, a):
+    """
+    Calculate the least number of flagstones needed to pave the Theatre Square.
+
+    Args:
+        n (int): The length of the Theatre Square.
+        m (int): The width of the Theatre Square.
+        a (int): The side length of a flagstone.
+
+    Returns:
+        int: The least number of flagstones needed.
+    """
+    flagstones = math.ceil(n / a) * math.ceil(m / a)
+    return flagstones
+
+# Read input
+n, m, a = map(int, input().split())
+
+# Calculate and print result
+result = theatre_square_paving(n, m, a)
+print(result)
+```
+### Example Use Cases
+
+* Input: `6 6 4`
+Output: `4`
+* Input: `10 10 5`
+Output: `4`
+* Input: `3 9 8`
+Output: `4`
+
+Note: The `math.ceil()` function is used to round up the result to the nearest whole number. This ensures that we have enough flagstones to cover the entire Theatre Square, even if the flagstones are larger than the Square itself.
+=========end==========
+
+AC: Solution found successfully

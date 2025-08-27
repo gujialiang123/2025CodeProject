@@ -1,0 +1,198 @@
+{
+  "problems": {
+    "102B": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "136A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "1A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "339B": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "379A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "43A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "486A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "490A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "584A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "617A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "791A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    },
+    "977A": {
+      "total_tests": 5,
+      "successful_solutions": 5,
+      "failed_solutions": 0,
+      "error_count": 0,
+      "avg_distance": 0.0,
+      "min_distance": 0,
+      "distances": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success_rate": 1.0
+    }
+  },
+  "last_updated": "2025-08-27T17:40:37.591849",
+  "model": "llama3.3-70b"
+}

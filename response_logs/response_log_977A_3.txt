@@ -1,0 +1,65 @@
+assistant0:
+### Problem Solution: Tanya's Subtraction Algorithm
+
+#### Problem Description
+Tanya subtracts one from a number by a custom algorithm:
+- If the last digit is non-zero, she decreases the number by one.
+- If the last digit is zero, she divides the number by 10 (removes the last digit).
+We are given an integer `n` and the number of subtractions `k`. The task is to print the result after all `k` subtractions.
+
+#### Solution
+
+We will implement Tanya's subtraction algorithm in Python. The algorithm will be as follows:
+- Convert the number to a string to easily access the last digit.
+- For each subtraction, check the last digit of the number.
+  - If it's non-zero, decrease the number by one.
+  - If it's zero, remove the last digit (divide by 10).
+- Repeat the subtraction process `k` times.
+
+```python
+def tanyas_subtraction(n, k):
+    """
+    Simulates Tanya's subtraction algorithm.
+
+    Args:
+        n (int): The initial number.
+        k (int): The number of subtractions.
+
+    Returns:
+        int: The result after k subtractions.
+    """
+    # Convert the number to a string for easy manipulation
+    num_str = str(n)
+
+    # Perform k subtractions
+    for _ in range(k):
+        # Check the last digit
+        if num_str[-1] != '0':
+            # Decrease the number by one
+            num_str = str(int(num_str) - 1)
+        else:
+            # Remove the last digit (divide by 10)
+            num_str = num_str[:-1]
+
+    # Convert the result back to an integer and return
+    return int(num_str)
+
+# Example usage
+n, k = map(int, input().split())
+result = tanyas_subtraction(n, k)
+print(result)
+```
+
+#### Explanation
+- The function `tanyas_subtraction` takes two arguments: `n` and `k`, representing the initial number and the number of subtractions, respectively.
+- The function converts `n` to a string `num_str` for easy manipulation of digits.
+- It then enters a loop that iterates `k` times, performing the subtraction algorithm in each iteration.
+- If the last digit of `num_str` is not '0', it converts `num_str` back to an integer, decrements it by 1, and then converts it back to a string.
+- If the last digit is '0', it removes the last character (digit) from `num_str`, effectively dividing the number by 10.
+- After `k` subtractions, it converts `num_str` back to an integer and returns the result.
+
+#### Time Complexity
+The time complexity of this solution is O(k * m), where k is the number of subtractions and m is the average number of digits in the number during the subtraction process. However, since k is guaranteed to be at most 50 and the operations within the loop are constant time, the solution is efficient for the given constraints.
+=========end==========
+
+AC: Solution found successfully

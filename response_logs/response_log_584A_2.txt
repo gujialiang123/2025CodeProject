@@ -1,0 +1,65 @@
+assistant0:
+**Solution to the Problem**
+
+### Problem Analysis
+
+The problem requires finding a number that consists of `n` digits and is divisible by `t`. The task is to print such a number or `-1` if no such number exists.
+
+### Solution Approach
+
+The approach to solve this problem involves constructing a number of `n` digits that is divisible by `t`. We can achieve this by considering the following cases:
+
+* If `t` is between `1` and `9` (inclusive), we can simply repeat the digit `t` `n` times to form a number that is divisible by `t`.
+* If `t` is `10`, we need to handle this case separately because a single-digit number `0` is not a valid solution as it does not have `n` digits.
+
+### Code Solution
+
+```python
+def find_divisible_number(n, t):
+    """
+    Finds a number of n digits that is divisible by t.
+    
+    Args:
+    n (int): The length of the number.
+    t (int): The number by which the result should be divisible.
+    
+    Returns:
+    str: A string representation of the number or '-1' if no such number exists.
+    """
+    if t < 10:
+        # Construct a number by repeating the digit t
+        return str(t) * n
+    elif t == 10:
+        # Handle the case where t is 10
+        if n == 1:
+            # If n is 1, no such number exists
+            return '-1'
+        else:
+            # Construct a number by appending '0' to '1' repeated n-1 times
+            return '1' + '0' * (n - 1)
+    else:
+        # If t is greater than 10, no such number exists
+        return '-1'
+
+# Read input from the user
+n, t = map(int, input().split())
+
+# Find and print the divisible number
+print(find_divisible_number(n, t))
+```
+
+### Example Use Cases
+
+1. Input: `n = 3`, `t = 2`
+   Output: `222`
+
+2. Input: `n = 5`, `t = 10`
+   Output: `10000`
+
+3. Input: `n = 1`, `t = 10`
+   Output: `-1`
+
+This solution handles the requirements of the problem and provides a concise, readable, and efficient code implementation.
+=========end==========
+
+AC: Solution found successfully

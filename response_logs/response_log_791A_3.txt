@@ -1,0 +1,52 @@
+assistant0:
+**Solution: Limak and Bob's Weight Comparison**
+
+### Problem Description
+Given the initial weights of Limak (`a`) and Bob (`b`), where `a <= b`, and the rates at which their weights change (Limak's weight triples, Bob's weight doubles every year), we need to find the number of full years it takes for Limak to become strictly heavier than Bob.
+
+### Solution
+
+```python
+def years_to_outweigh(a, b):
+    """
+    Calculates the number of full years it takes for Limak to become strictly heavier than Bob.
+
+    Args:
+    a (int): Initial weight of Limak
+    b (int): Initial weight of Bob
+
+    Returns:
+    int: Number of years for Limak to outweigh Bob
+    """
+    years = 0
+    while a <= b:
+        a *= 3  # Limak's weight triples
+        b *= 2  # Bob's weight doubles
+        years += 1
+    return years
+
+# Read input
+a, b = map(int, input().split())
+
+# Calculate and print the result
+print(years_to_outweigh(a, b))
+```
+
+### Explanation
+
+1. Define a function `years_to_outweigh` that takes the initial weights `a` and `b` as input and returns the number of years it takes for Limak to outweigh Bob.
+2. Initialize a variable `years` to 0 to keep track of the number of years.
+3. Use a while loop to simulate the growth of Limak and Bob's weights. The loop continues as long as Limak's weight is less than or equal to Bob's weight.
+4. Inside the loop, triple Limak's weight and double Bob's weight to simulate their growth.
+5. Increment the `years` variable by 1 at the end of each iteration.
+6. Once the loop ends, return the `years` variable, which represents the number of full years it took for Limak to become strictly heavier than Bob.
+7. Read the input values for `a` and `b` from the user.
+8. Call the `years_to_outweigh` function with the input values and print the result.
+
+### Example Use Cases
+
+* If the input is `1 1`, the output will be `1`, because after one year, Limak's weight will be 3 and Bob's weight will be 2.
+* If the input is `2 4`, the output will be `1`, because after one year, Limak's weight will be 6 and Bob's weight will be 8, but after two years, Limak's weight will be 18 and Bob's weight will be 16.
+=========end==========
+
+AC: Solution found successfully

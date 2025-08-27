@@ -1,0 +1,64 @@
+### Problem Solution: Tanya's Subtraction Algorithm
+
+#### Introduction
+The problem requires us to simulate Tanya's subtraction algorithm, which involves subtracting one from a number in a specific way.
+
+#### Algorithm Description
+The algorithm works as follows:
+- If the last digit of the number is non-zero, subtract one from the number.
+- If the last digit of the number is zero, remove the last digit (i.e., divide the number by 10).
+
+#### Solution Code
+```python
+def tanyas_subtraction(n, k):
+    """
+    Simulates Tanya's subtraction algorithm.
+    
+    Args:
+    n (int): The initial number.
+    k (int): The number of subtractions.
+    
+    Returns:
+    int: The result after k subtractions.
+    """
+    for _ in range(k):
+        # Check if the last digit of the number is zero
+        if n % 10 == 0:
+            # Remove the last digit (divide by 10)
+            n //= 10
+        else:
+            # Subtract one from the number
+            n -= 1
+    
+    return n
+
+def main():
+    # Read input from user
+    n, k = map(int, input().split())
+    
+    # Simulate Tanya's subtraction algorithm
+    result = tanyas_subtraction(n, k)
+    
+    # Print the result
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+#### Explanation
+1. Define a function `tanyas_subtraction` that takes the initial number `n` and the number of subtractions `k` as arguments.
+2. Inside the function, use a loop to simulate the subtraction algorithm `k` times.
+3. Within the loop, check if the last digit of the number `n` is zero by using the modulo operator (`n % 10 == 0`).
+4. If the last digit is zero, divide the number by 10 to remove the last digit. Otherwise, subtract one from the number.
+5. After simulating the subtraction algorithm `k` times, return the resulting number.
+6. In the `main` function, read the input from the user and pass it to the `tanyas_subtraction` function.
+7. Finally, print the result.
+
+#### Example Use Cases
+- Input: `10 1`
+  Output: `1`
+- Input: `100 3`
+  Output: `97`
+- Input: `123 1`
+  Output: `122`

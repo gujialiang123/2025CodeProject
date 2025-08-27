@@ -1,0 +1,77 @@
+assistant0:
+**Solution to Gift Exchange Problem**
+=====================================
+
+**Problem Statement**
+--------------------
+
+Given a list of integers representing the friend who gave a gift to each friend, find the friend who gave a gift to each friend.
+
+**Code Solution**
+----------------
+
+```python
+def find_gift_givers(n, gifts):
+    """
+    Find the friend who gave a gift to each friend.
+
+    Args:
+        n (int): The number of friends.
+        gifts (list): A list of integers representing the friend who gave a gift to each friend.
+
+    Returns:
+        list: A list of integers representing the friend who gave a gift to each friend.
+    """
+    # Initialize an empty list to store the gift givers
+    gift_givers = [0] * n
+
+    # Iterate over the gifts list
+    for i in range(n):
+        # The friend who received the gift at index i is the friend at index gifts[i] - 1
+        # So, the friend who gave the gift to friend i is the friend at index i
+        gift_givers[gifts[i] - 1] = i + 1
+
+    # Return the list of gift givers
+    return gift_givers
+
+# Read the input
+n = int(input())
+gifts = list(map(int, input().split()))
+
+# Find the gift givers
+gift_givers = find_gift_givers(n, gifts)
+
+# Print the gift givers
+print(' '.join(map(str, gift_givers)))
+```
+
+**Example Use Case**
+-------------------
+
+Input:
+```
+3
+2 3 1
+```
+Output:
+```
+3 1 2
+```
+Explanation:
+Friend 1 received a gift from friend 3.
+Friend 2 received a gift from friend 1.
+Friend 3 received a gift from friend 2.
+
+**Explanation**
+---------------
+
+1. Read the input: Read the number of friends `n` and the list of gifts `gifts`.
+2. Initialize an empty list `gift_givers` to store the friend who gave a gift to each friend.
+3. Iterate over the `gifts` list. For each friend `i`, find the friend who gave a gift to friend `i` by finding the friend at index `gifts[i] - 1`.
+4. Store the friend who gave the gift to friend `i` in the `gift_givers` list at index `gifts[i] - 1`.
+5. Print the `gift_givers` list.
+
+Note: This solution assumes that the input is valid and that each friend received exactly one gift.
+=========end==========
+
+AC: Solution found successfully

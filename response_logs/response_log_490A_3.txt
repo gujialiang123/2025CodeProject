@@ -1,0 +1,102 @@
+assistant0:
+**Solution to the Scientific Decathlon Olympias Problem**
+===========================================================
+
+**Problem Statement**
+--------------------
+
+Given a list of `n` children with skills in programming, maths, or physical education, form teams of three students with different skills to participate in the Scientific Decathlon Olympias. Each child can be a member of no more than one team.
+
+**Solution Approach**
+--------------------
+
+To solve this problem, we will:
+
+1. Count the number of children with each skill.
+2. Determine the maximum number of teams that can be formed based on the skill counts.
+3. Form the teams using the children with the most abundant skill first.
+
+**Code Solution**
+----------------
+```python
+def form_teams(n, skills):
+    """
+    Form teams of three students with different skills.
+
+    Args:
+    n (int): The number of children in the school.
+    skills (list): A list of integers representing the skills of each child.
+
+    Returns:
+    teams (list): A list of teams, where each team is a list of three integers representing the indexes of the children in the team.
+    """
+    # Count the number of children with each skill
+    skill_counts = [0, 0, 0]
+    for skill in skills:
+        skill_counts[skill - 1] += 1
+
+    # Determine the maximum number of teams that can be formed
+    max_teams = min(skill_counts)
+
+    # Form the teams
+    teams = []
+    skill_indexes = [[], [], []]
+    for i, skill in enumerate(skills):
+        skill_indexes[skill - 1].append(i + 1)
+
+    for _ in range(max_teams):
+        team = []
+        for skill in [1, 2, 3]:
+            team.append(skill_indexes[skill - 1].pop(0))
+        teams.append(team)
+
+        # Update the skill counts
+        for skill in [1, 2, 3]:
+            skill_counts[skill - 1] -= 1
+
+    return teams
+
+def main():
+    # Read the input
+    n = int(input())
+    skills = list(map(int, input().split()))
+
+    # Form the teams
+    teams = form_teams(n, skills)
+
+    # Print the output
+    print(len(teams))
+    for team in teams:
+        print(' '.join(map(str, team)))
+
+if __name__ == "__main__":
+    main()
+```
+**Example Use Case**
+--------------------
+
+Input:
+```
+6
+1 2 3 1 2 3
+```
+Output:
+```
+2
+1 2 3
+4 5 6
+```
+In this example, the maximum number of teams that can be formed is 2, and the teams are formed using the children with the most abundant skill first.
+
+**Time Complexity**
+------------------
+
+The time complexity of the solution is O(n), where n is the number of children in the school. This is because we iterate through the list of children twice: once to count the skill counts, and once to form the teams.
+
+**Space Complexity**
+------------------
+
+The space complexity of the solution is O(n), where n is the number of children in the school. This is because we use three lists to store the skill counts, and one list to store the teams.
+=========end==========
+
+AC: Solution found successfully
