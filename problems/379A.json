@@ -1,0 +1,7 @@
+{
+  "id": "379A",
+  "title": "New Year Candles",
+  "description": "Vasily the Programmer loves romance, so this year he decided to illuminate his room with candles.\n\nVasily has a candles.When Vasily lights up a new candle, it first burns for an hour and then it goes out. Vasily is smart, so he can make b went out candles into a new candle. As a result, this new candle can be used like any other new candle.\n\nNow Vasily wonders: for how many hours can his candles light up the room if he acts optimally well? Help him find this number.\n\nInput\nThe single line contains two integers, a and b (1 <= n <= 1000; 2 <= n <= 1000).\n\nOutput\nPrint a single integer - the number of hours Vasily can light up the room for.",
+  "hints": "",
+  "samples": []
+} 

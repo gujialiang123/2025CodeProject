@@ -1,0 +1,28 @@
+#include<cstdio>
+using namespace std;
+char s[10010],ch;
+int hour,min,n,ans=1,pre_hour,pre_min;
+//pre_hour,pre_min保存上一个语句的小时，分钟。
+int main()
+{
+    scanf("%d",&n);
+    getchar();//吃掉换行符
+    while(n--)
+    {
+        scanf("[%d:%d ",&hour,&min);//scanf格式读入,不用再处理字符串了
+        ch=getchar();//我们只关心下一个字符是a还是p。
+        gets(s);	 //剩下这一行，一概不管，一个gets读掉
+        //接下来处理时刻，转换为24小时制。
+        hour%=12;
+        if(ch=='p')hour+=12;
+        //判断
+        if(hour<pre_hour||(hour==pre_hour&&min<pre_min))ans++;
+        if(hour==pre_hour&&min==pre_min)num++;//时刻没变，计数器++
+        else num=1;//时刻变了，计数器重置
+        if(num>10)ans++,num=1;//达到10个，计数器重置，天数++
+        //更新
+        pre_hour=hour;pre_min=min;
+    }
+    printf("%d",ans);
+    return 0;
+}

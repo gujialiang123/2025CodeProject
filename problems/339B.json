@@ -1,0 +1,7 @@
+{
+  "id": "339B",
+  "title": "Xenia and Ringroad",
+  "description": "Xenia lives in a city that has n houses built along the main ringroad. The ringroad houses are numbered 1 through n in the clockwise order. The ringroad traffic is one way and also is clockwise.\n\nXenia has recently moved into the ringroad house number 1. As a result, she's got m things to do. In order to complete the i-th task, she needs to be in the house number ai and complete all tasks with numbers less than i. Initially, Xenia is in the house number 1, find the minimum time she needs to complete all her tasks if moving from a house to a neighboring one along the ringroad takes one unit of time.\n\nInput\nThe first line contains two integers n and m (2≤n≤10^5,1≤m≤10^5). The second line contains m integers a1,a2,...,am (1≤ai≤n). Note that Xenia can have multiple consecutive tasks in one house.\n\nOutput\nPrint a single integer — the time Xenia needs to complete all tasks.",
+  "hints": "",
+  "samples": []
+} 

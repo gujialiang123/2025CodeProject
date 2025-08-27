@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const ll mxn = 200;
+const ll N = mxn + 10;
+ll n, u[N], v[N], head[N], dp[N], cnt, ans, sum, s;
+struct Edge { ll nxt, to; } e[N * 2];//邻接表
+void add(ll u, ll v) { e[++ cnt] = {head[u], v}, head[u] = cnt; }//邻接表建边
+void dfs(ll u, ll pre) {
+	dp[u] = 0;
+	for(ll i = head[u], v; i; i = e[i].nxt) {
+		v = e[i].to;
+		if(v == pre) continue;
+		dfs(v, u);
+		sum = max(sum, dp[u] + dp[v] + 1);
+		dp[u] = max(dp[u], dp[v] + 1);
+	}
+	return ;
+}//搜索，求树的直径
+signed main(){
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	cin >> n;
+	for(ll i = 1; i < n; ++ i) cin >> u[i] >> v[i], add(u[i], v[i]), add(v[i], u[i]);
+	for(ll i = 1; i < n; ++ i) {
+		s = 1;
+		dfs(u[i], v[i]);//对第一个区块进行搜索
+		s *= sum, sum = 0;
+		dfs(v[i], u[i]);//对第二个区块进行搜索
+		s *= sum, sum = 0;
+		ans = max(ans, s);//求最大
+	}
+	cout << ans;
+	return 0;
+}

@@ -1,0 +1,34 @@
+#include <algorithm>
+#include <cstdio>
+using namespace std;
+const int maxn = 55, maxm = 200005;
+
+int A[maxn];  // 原序列
+int cnts[maxm]; // cnts[i]表示变成所有数均变成i需要的次数
+int cntc[maxm]; // cntc[i]表示变成i的数量
+int main()
+{
+    int n, k;
+    scanf("%d%d", &n, &k);
+    for (int i = 1; i <= n; i++)
+        scanf("%d", &A[i]);
+    sort(A + 1, A + n + 1); // 需要从小到大依次处理
+    for (int i = 1; i <= n; i++) {
+        int x = A[i], sum = 0;
+        while (x) {
+            if (cntc[x] < k) 
+                cntc[x]++, cnts[x] += sum;
+            // else 
+            //  已经达到k个数字了，为了保证最小化次数所以不进行操作
+            
+            x /= 2;
+            sum++;
+        }
+    }
+    int ans = -1u / 2; // -1u/2=2^31-1
+    for (int i = 1; i <= maxm; i++)
+        if (cntc[i] >= k)
+            ans = min(ans, cnts[i]); // 在所有满足条件的数中取出次数最小的
+    printf("%d\n", ans);
+    return 0;
+}

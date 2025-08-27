@@ -1,0 +1,7 @@
+{
+  "id": "486A",
+  "title": "Calculating Function",
+  "description": "For a positive integer n let's define a function f:\n\nf(n) = - 1 + 2 - 3 + .. + (-1)^n*n\n\nYour task is to calculate f(n) for a given integer n.\n\nInput\nThe single line contains the positive integer n (1 <= n <= 10^15).\n\nOutput\nPrint f(n) in a single line.",
+  "hints": "Tips:This question needs to use the geometric sequence summation formula to calculate in O(1), otherwise it will time out. ",
+  "samples": []
+} 

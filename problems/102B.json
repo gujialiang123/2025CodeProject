@@ -1,0 +1,7 @@
+{
+  "id": "102B",
+  "title": "Sum of Digits",
+  "description": "Having watched the last Harry Potter film, little Gerald also decided to practice magic. He found in his father's magical book a spell that turns any number in the sum of its digits. At the moment Gerald learned that, he came across a number n. How many times can Gerald put a spell on it until the number becomes one-digit?\n\nInput\nThe first line contains the only integer n (0≤n≤10^100000). It is guaranteed that n doesn't contain any leading zeroes.\n\nOutput\nPrint the number of times a number can be replaced by the sum of its digits until it only contains one digit.",
+  "hints": "Tips:Since Python's int type is too slow, you may need to use the str type to store and manipulate numbers.",
+  "samples": []
+} 
